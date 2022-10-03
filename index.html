@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Sliding gaess</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#bagianatas").click(function(){
+                $("#bagianbawah").slideToggle("slow");
+            });
+        });
+
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100VH;
+            padding-top: 10%;
+            text-align: center;
+            color:  #ffff;
+            background: linear-gradient(45deg, #EE7752, #1da183, #E73C7E)
+        }
+        #bagianatas{
+            padding: 12px;
+            text-align: center;
+            background: linear-gradient(135deg, #dabbb2, #a82b5b, #1da183);
+            border: solid 2px #1da183;
+            box-sizing: border-box;
+            width: 100%;
+            border-radius: 7px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        #bagianatas:hover{
+            letter-spacing: 4px;
+
+        }
+        #bagianbawah{
+            padding: 30px;
+            background: linear-gradient(135deg, #dabbb2, #a82b5b, #1da183);
+            border-radius: 7px;
+            display: none;
+        }
+        .kolom{
+            margin-left: 110px;
+            margin-right: 111px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kolom">
+    <div id="bagianatas">Haiiii ini Jquery Sliding💖</div>
+    <div id="bagianbawah">The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods.
+
+        If the elements have been slid down, slideToggle() will slide them up.
+    
+        If the elements have been slid up, slideToggle() will slide them down. 
+        <br> 
+        nihil fugiat fuga deserunt, quaerat animi eos et asperiores debitis ut cupiditate?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </div>
+    </div>
+</body>     
+</body>
+</html>
